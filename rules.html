@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- title -->
+  <title>Rock-Papar-Scissors | Shareef</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- css -->
+  <link rel="stylesheet" href="rules.css">
+  <!-- favicon -->
+  <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+
+  <section class="navbar">
+    <div class="first-div container">
+      <div class="logo">
+        <img src="logo.svg" alt="Rock-Papar-Scissors" class="navbar-brand my-2">
+      </div>
+      <div class="score ">
+        <h5 class="scoreText">score</h5>
+        <h2 class="scoreNumber">0</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="container bg-triangle">
+    <img src="bg-triangle.svg" alt="bg-triangle">
+    <div id="paper" class="icon-paper imgStyle">
+      <img  src="icon-paper.svg" alt="icon-paper">
+    </div>
+    <div id="scissors" class="icon-scissors imgStyle">
+      <img  src="icon-scissors.svg" alt="icon-scissors">
+    </div>
+    <div id="rock" class="icon-rock imgStyle">
+      <img src="icon-rock.svg" alt="icon-rock">
+    </div>
+  </section>
+
+  <section class="picked container">
+    <div class="pickedUser">
+      <h3 class="pickedh3User">
+        You Picked
+      </h3>
+      <div class="pickedGameUser">
+        <div class="imgStyle pickedPaperUser">
+          <img src="icon-paper.svg" alt="icon-paper">
+        </div>
+        <div class="imgStyle pickedScissorsUser">
+          <img src="icon-scissors.svg" alt="icon-scissors">
+        </div>
+        <div class="imgStyle pickedRockUser">
+          <img src="icon-rock.svg" alt="icon-rock">
+        </div>
+      </div>
+    </div>
+    <div class="textDiv">
+      <h1 class="youwin">YOU WIN</h1>
+      <h1 class="youlose">YOU LOSE</h1>
+      <h1 class="draw">DRAW</h1>
+      <button class="btn btn-light textButton"><h3>PLAY AGAIN</h3></button>
+    </div>
+    <div class="pickedHouse">
+      <h3 class="pickedh3House">
+        House picked
+      </h3>
+      <div class="pickedGameHouse">
+        <div class="imgStyle pickedPaperHouse" >
+          <img src="icon-paper.svg" alt="icon-paper" >
+        </div>
+        <div class="imgStyle pickedScissorsHouse" >
+          <img src="icon-scissors.svg" alt="icon-scissors">
+        </div>
+        <div class="imgStyle pickedRockHouse">
+          <img src="icon-rock.svg" alt="icon-rock">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="rulesBtnDiv">
+      <button class="btn btn-light"> <a href="index.html">rules</a> </button>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

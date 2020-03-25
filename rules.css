@@ -1,0 +1,211 @@
+body{
+    background-color: hsl(214, 47%, 23%);
+    margin: 0;
+}
+
+h1{
+    color: #ffffff;
+}
+
+.first-div {
+    margin-top: 3rem;
+    border: solid 2px #000000;
+    border-radius: 25px;
+    border-color: hsl(217, 16%, 45%);
+}
+
+.score {
+    height:6.25rem;
+    width: 6.25rem;
+    background-color: #ffffff;
+    border-radius: 10px;;
+}
+
+.scoreNumber {
+    padding: 0 30px;
+    color: hsl(229, 25%, 31%);
+}
+
+.scoreText {
+    padding-top: 15px;
+    padding-left: 25px;
+    color: hsl(229, 64%, 46%);
+}
+
+.bg-triangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.imgStyle{
+    background-color: #ffffff;
+    border-radius: 50%;
+    border-width: 1.2rem;
+    border-style: solid;
+    padding: 1.8rem;
+}
+
+.imgStyle:hover {
+    background-color: #f6eedf;
+}
+
+.icon-paper {    
+    border-color: hsl(230, 89%, 62%);
+    position: absolute;
+    top: 20px;
+    left: 350px;
+}
+
+.icon-scissors {
+    border-color: hsl(39, 89%, 49%);
+    position: absolute;
+    top: 20px;
+    right: 350px;
+}
+
+.icon-rock {
+    border-color: hsl(349, 71%, 52%);
+    position: absolute;
+    bottom: 20px;   
+    padding: 2.15rem;
+}
+
+.picked {
+    position: relative;
+    padding: 5rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pickedh3User {
+    /* display: inline-block; */
+    display: none;
+    color: #ffffff;
+    position: absolute;
+    top: 20px;
+    left: 250px;
+}
+
+.pickedh3House {
+    /* display: inline-block; */
+    display: none;
+    color: #ffffff;
+    position: absolute;
+    top: 20px;
+    right: 220px;
+}
+
+.pickedPaperUser {
+    border-color: hsl(230, 89%, 62%);
+    /* display: inline-block; */
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 250px;
+
+}
+
+.pickedScissorsUser {
+    border-color: hsl(39, 89%, 49%);
+    /* display: inline-block; */
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 250px;
+}
+
+.pickedRockUser {
+    border-color: hsl(349, 71%, 52%);
+    /* display: inline-block; */
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 250px;
+    padding: 2.15rem;
+}
+
+.pickedPaperHouse {
+    border-color: hsl(230, 89%, 65%);
+    /* display: inline-block; */
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 250px;
+
+}
+
+.pickedScissorsHouse {
+    border-color: hsl(40, 84%, 53%);
+    /* display: inline-block; */
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 250px;
+}
+
+.pickedRockHouse {
+    border-color: hsl(349, 70%, 56%);
+    /* display: inline-block; */
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 250px;
+    padding: 2.15rem;
+}
+
+.textDiv {
+    position: absolute;
+    top: 70px;
+    display: none;
+}
+
+.youwin, .youlose, .draw {
+    display: none;
+}
+
+.rulesBtnDiv {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.textButton {
+    display: none;
+}
+
+@media(max-width: 780px) {
+
+    body {
+        width: 100%;
+    }
+
+    .icon-paper, .pickedh3User, .pickedPaperUser, .pickedScissorsUser, .pickedRockUser {
+        left: 150px;
+    }
+    .icon-scissors, .pickedh3House, .pickedPaperHouse, .pickedScissorsHouse, .pickedRockHouse {
+        right: 150px;
+    }
+    .textDiv {
+        top: 250px;
+    }
+}
+
+@media(max-width: 420px) {
+
+    body {
+        width: 100%;
+    }
+
+    .icon-paper, .pickedh3User, .pickedPaperUser, .pickedScissorsUser, .pickedRockUser {
+        left: 5px;
+    }
+    .icon-scissors, .pickedh3House, .pickedPaperHouse, .pickedScissorsHouse, .pickedRockHouse {
+        right: 5px;
+    }
+    .textDiv {
+        top: 250px;
+    }
+}
