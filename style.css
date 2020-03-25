@@ -2,10 +2,6 @@ body {
     background-color: #639a67;
 }
 
-.btnDiv {
-    padding: 0 0 0 500px;
-}
-
 .imgDiv {
     display: flex;
     justify-content: center;
@@ -16,8 +12,5 @@ body {
 @media(max-width: 375px) {
     .imgDiv {
         padding: 100px 0;
-    }
-    .btnDiv {
-        padding: 0 0 0 120px;
     }
 }
